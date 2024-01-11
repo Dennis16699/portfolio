@@ -1,0 +1,71 @@
+section {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.my-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px 200px;
+}
+
+.my-skills-h3{
+    position: absolute;
+    font-family: "Syne", sans-serif;
+    font-size: 78px;
+    font-weight: 800;
+    margin-top: -50px;
+    padding: 0px 30px;
+    background-color: #fffcf3;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        color: #00BC8F;
+        cursor: default;
+    }
+}
+
+.my-skills-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: solid 4px black;
+    padding: 30px;
+
+    
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 90px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        color: #00BC8F;
+        cursor: default;
+    }
+
+    img {
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+    span {
+        margin-top: 10px;
+        font-weight: 700;
+        font-family: "Overpass", sans-serif;
+    }
+}
+
+.arrow-right{
+    padding: 0px 200px;
+    margin-top: 50px;
+}

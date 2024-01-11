@@ -9,15 +9,17 @@ section {
 
     &:hover {
       color: #00BC8F;
+      cursor: default;
     }
   }
 }
 
 .about-me {
   text-align: left;
-  padding: 0px 230px 0px 150px;
+  padding: 0px 230px 0px 200px;
   font-size: 23px;
   font-family: "Overpass", sans-serif;
+  cursor: default;
 }
 
 .talk-btn {
@@ -43,10 +45,10 @@ section {
 }
 
 .about-me-photo {
-  padding: 200px 150px 30px 0px;
+  padding: 200px 200px 30px 0px;
 }
 
-.arrow-left{
+.arrow-left {
   display: flex;
   justify-content: flex-end;
   padding-right: 350px;

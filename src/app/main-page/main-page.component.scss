@@ -11,6 +11,7 @@ section{
         font-size: 128px;
         font-weight: 800;
         margin: 0;
+        cursor: default;
     }
 }
 
@@ -25,6 +26,7 @@ section{
         font-family: 'Overpass', sans-serif;
         font-weight: 700;
         color: #00BC8F;
+        cursor: default;
     }
 }
 
@@ -49,7 +51,7 @@ a{
     font-size: 23px;
     font-family: 'Overpass', sans-serif;
     color: #000000;
-    padding: 0px 150px;
+    padding: 0px 200px;
 
     img {
         width: 50px;
