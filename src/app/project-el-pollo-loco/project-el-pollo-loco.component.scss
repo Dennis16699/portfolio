@@ -8,6 +8,7 @@ section {
 
 .project-container {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     padding: 100px 200px;
     gap: 100px;
@@ -42,7 +43,7 @@ section {
         align-items: center;
         height: 75px;
         width: 75px;
-        right: -15px;
+        left: -15px;
         top: 122px;
         position: absolute;
         z-index: 2;
@@ -62,8 +63,8 @@ section {
     opacity: 1;
     border: 3px solid black;
     top: 20px;
-    left: 20px;
-    right: -20px;
+    left: -20px;
+    right: 20px;
     bottom: -20px;
 }
 
@@ -79,9 +80,9 @@ section {
 .project-container:hover .arrow-down {
     opacity: 1;
     position: absolute;
-    right: -62px;
+    left: -62px;
     top: 170px;
-    transform: rotate(0);
+    transform: rotate(260deg);
 }
 
 .project-description {
@@ -91,13 +92,13 @@ section {
     position: relative;
     z-index: -10;
     top: 0;
-    left: -550px;
+    right: -550px;
     opacity: 0;
-    transition: left 200ms ease 60ms, opacity 200ms ease;
+    transition: right 200ms ease 60ms, opacity 200ms ease;
     cursor: default;
 
     &.show {
-        left: 0;
+        right: 0;
         opacity: 1;
     }
 }

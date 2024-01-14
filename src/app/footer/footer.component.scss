@@ -1,0 +1,47 @@
+footer {
+    background-color: black;
+    font-family: 'Overpass';
+    padding: 0px 200px;
+    height: 150px;
+    margin-top: -1px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    span {
+        color: #FFFCF3;
+        font-size: 23px;
+        font-weight: 400;
+        margin-top: 20px;
+        cursor: default;
+    }
+
+    img {
+        margin-top: 5px;
+        width: 67px;
+        height: 33px;
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+
+    img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+.legal-notice {
+    color: #FFFCF3;
+    display: flex;
+    justify-content: end;
+    font-size: 23px;
+    font-weight: 400;
+    cursor: pointer;
+}

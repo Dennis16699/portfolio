@@ -2,20 +2,19 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-project-join',
+  selector: 'app-project-pokedex',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './project-join.component.html',
-  styleUrl: './project-join.component.scss'
+  templateUrl: './project-pokedex.component.html',
+  styleUrl: './project-pokedex.component.scss'
 })
-export class ProjectJoinComponent {
-  
+export class ProjectPokedexComponent {
+
   state = 'normal';
   isVisible = false;
 
   @ViewChild('aboutmeLeft', { static: true }) aboutmeLeft: ElementRef | undefined;
 
-  
   hoveredStates: boolean[] = [];
 
   showDescription(index: number) {

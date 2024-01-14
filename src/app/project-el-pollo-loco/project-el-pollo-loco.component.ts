@@ -2,20 +2,19 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-project-join',
+  selector: 'app-project-el-pollo-loco',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './project-join.component.html',
-  styleUrl: './project-join.component.scss'
+  templateUrl: './project-el-pollo-loco.component.html',
+  styleUrl: './project-el-pollo-loco.component.scss'
 })
-export class ProjectJoinComponent {
-  
+export class ProjectElPolloLocoComponent {
+
   state = 'normal';
   isVisible = false;
 
   @ViewChild('aboutmeLeft', { static: true }) aboutmeLeft: ElementRef | undefined;
 
-  
   hoveredStates: boolean[] = [];
 
   showDescription(index: number) {
@@ -61,4 +60,3 @@ export class ProjectJoinComponent {
     }
   }
 }
-

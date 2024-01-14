@@ -1,0 +1,133 @@
+footer {
+    background-color: black;
+    color: #FFFCF3;
+    clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+}
+
+.say-hi {
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 78px;
+    padding: 125px 0px 100px 200px;
+
+    span {
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: #00BC8F;
+            cursor: default;
+        }
+    }
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Overpass';
+
+    h3 {
+        color: #00BC8F;
+        font-size: 32px;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+
+    span {
+        font-size: 23px;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+
+
+    input,
+    textarea {
+        background-color: black;
+        height: 60px;
+        font-size: 18px;
+        margin: 15px 0px;
+        padding: 12px 16px;
+        color: #FFFCF3;
+        border: none;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid #FFFCF3;
+        box-sizing: border-box;
+        font-family: 'Overpass';
+        transition: all 100ms ease-in-out;
+        resize: vertical;
+
+        &:hover {
+            cursor: pointer;
+            border-left: 4px solid #FFFCF3;
+            border-right: 4px solid #FFFCF3;
+            border-top: 4px solid #FFFCF3;
+        }
+
+        &:focus {
+            border-left: 4px solid #FFFCF3;
+            border-right: 4px solid #FFFCF3;
+            border-top: 4px solid #FFFCF3;
+            outline: none;
+            font-family: 'Overpass';
+
+        }
+
+        &::placeholder {
+            font-size: 18px;
+            color: #FFFCF3;
+        }
+    }
+}
+
+.privacy-policy {
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+
+    span {
+        font-size: 14px;
+        margin: 8px;
+    }
+
+    input {
+        height: 20px;
+        width: 20px;
+
+        &:checked {
+            height: 20px;
+            width: 20px;
+
+        }
+    }
+}
+
+input[type=checkbox] {
+    accent-color: #00BC8F;
+    cursor: pointer;
+}
+
+button {
+    text-decoration: none;
+    color: #FFFCF3;
+    background-color: black;
+    font-size: 23px;
+    font-weight: 400;
+    border: 4px solid #FFFCF3;
+    padding: 20px 50px 20px 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        font-weight: 600;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+}
