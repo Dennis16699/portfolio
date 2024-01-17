@@ -1,59 +1,141 @@
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     text-align: center;
     background-color: #FFFCF3;
-    
+
     h1 {
         font-family: 'Syne', sans-serif;
         font-size: 128px;
         font-weight: 800;
         margin: 0;
         cursor: default;
+
+        @media (max-width: 1400px){
+            font-size: 80px;
+        }
+
+        @media (max-width: 1100px){
+            font-size: 60px;
+            margin-top: -150px;
+        }
+
+        @media (max-width: 540px){
+            font-size: 32px;
+        }
     }
 }
 
-.main-name{
+.slideAnimation {
+    transform: scale(0);
+    animation: slideIn 500ms forwards ease-in-out;
+}
+
+.main-name {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    span{
+    span {
         font-size: 48px;
         margin-left: 10px;
         font-family: 'Overpass', sans-serif;
         font-weight: 700;
         color: #00BC8F;
         cursor: default;
+
+        @media (max-width: 1400px){
+            font-size: 35px;
+        }
+
+        @media (max-width: 1100px){
+            font-size: 28px;
+        }
+
+        @media (max-width: 540px){
+            font-size: 18px;
+        }
     }
+
+    img{
+        @media (max-width: 1400px){
+            width: 350px;
+            height: 3px;
+        }
+
+        @media (max-width: 1100px){
+            width: 250px;
+            height: 3px;
+        }
+
+        @media (max-width: 1100px){
+            width: 130px;
+            height: 3px;
+        }
+    }
+
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: -65px;
+
+
+    @media (max-width: 1500px){
+        margin-top: 25px;
+    }
 }
 
-.email-container{
+.email-container {
     writing-mode: vertical-lr;
     text-orientation: mixed;
     transform: rotate(180deg);
     margin-bottom: -170px;
 }
 
-a{
+a {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 20px;
     font-family: 'Overpass', sans-serif;
     color: #000000;
-    padding: 0px 200px;
+    padding: 0px 200px 0px 0px;
 
-    img {
-        width: 50px;
+
+    @media (max-width: 900px){
+        padding: 0px 30px 0px 0px;
+    }
+}
+
+.scroll-down {
+    width: 50px;
+    animation: slideUpDown 2s infinite alternate;
+    position: relative;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+        /* Endzustand: groß */
+    }
+}
+
+@keyframes slideUpDown {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 0px;
     }
 }

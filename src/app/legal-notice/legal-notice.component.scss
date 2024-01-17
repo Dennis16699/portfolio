@@ -1,0 +1,24 @@
+main {
+    padding: 0px 200px;
+    font-family: 'Overpass';
+    height: calc(100vh - 149px);
+
+    @media (max-width: 900px) {
+        padding: 0px 30px;
+    }
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+div {
+    padding-top: 150px;
+}

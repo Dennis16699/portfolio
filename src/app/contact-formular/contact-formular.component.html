@@ -1,23 +1,27 @@
-<footer>
+<footer id="contact">
     <div class="say-hi">
-        <span>Say Hi!</span>
+        <span>Say Hi !</span>
     </div>
     <div class="contact-container">
-        <h3>
+        <p>
             Want to discuss a new project?
-        </h3>
+        </p>
         <span>
             Say hello! let's discuss your ideas and make it happen
         </span>
-        <form class="contact-form" action="">
-            <input type="text" placeholder="Your name">
-            <input type="email" placeholder="Your email">
-            <textarea style="min-height: 200px;" placeholder="Your message"></textarea>
+        <form class="contact-form" method="POST" action="https://formspree.io/f/mbjnlzbb">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" style="min-height: 200px;" placeholder="Your message" required></textarea>
+            <div class="privacy-policy">
+                <input type="checkbox" required>
+                <span >I've read the <span class="privacypolicy" (click)="privacypolicy()">Privacy policy</span> and agree to the processing of my data as outlined.</span>
+            </div>
+            <div class="send-message-btn">
+                <button  type="submit">Send message</button>
+            </div>
         </form>
-        <div class="privacy-policy">
-            <input type="checkbox">
-            <span>I've read the <a href="">Privacy policy</a> and agree to the processing of my data as outlined.</span>
-        </div>
-        <button>Send message</button>
+        
+        
     </div>
 </footer>

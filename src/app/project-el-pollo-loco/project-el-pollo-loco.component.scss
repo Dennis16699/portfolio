@@ -10,10 +10,15 @@ section {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 100px 200px;
-    gap: 100px;
+    padding: 0px 200px;
+    margin-bottom: 150px;
+    gap: 160px;
     position: relative;
-    z-index: 2;
+    width: 100%;
+
+    @media (max-width: 900px) {
+        padding: 50px 30px;
+    }
 }
 
 .project-image-container {
@@ -23,13 +28,13 @@ section {
     transition: all 225ms ease-in-out;
     border: 3px solid transparent;
     filter: grayscale(100%);
+    z-index: 2;
 
     &:before {
         content: "";
         position: absolute;
         border: 3px solid transparent;
         opacity: 0;
-        z-index: 1;
         transition: all 225ms ease-in-out;
         top: 0;
         left: 0;
@@ -46,7 +51,6 @@ section {
         left: -15px;
         top: 122px;
         position: absolute;
-        z-index: 2;
         opacity: 0;
         transition: all 225ms ease-in-out;
         transform: rotate(90deg);
@@ -56,7 +60,6 @@ section {
 .project-image {
     height: 360px;
     max-width: 550px;
-    z-index: 0;
 }
 
 .project-container:hover .project-image-container::before {
@@ -90,7 +93,6 @@ section {
     flex-direction: column;
     gap: 16px;
     position: relative;
-    z-index: -10;
     top: 0;
     right: -550px;
     opacity: 0;
@@ -119,7 +121,7 @@ section {
     padding-bottom: 20px;
     font-family: 'Overpass';
 
-    @media (max-width: 1050px) {
+    @media (max-width: 1400px) {
         display: flex;
     }
 }
@@ -171,23 +173,12 @@ section {
     }
 }
 
-@media (max-width: 1280px) {
-    .project-image {
-        height: 340px;
-        max-width: 450px;
-    }
-
-    .project-title {
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 1050px) {
+@media (max-width: 1400px) {
     .project-container {
-        max-width: 460px !important;
         margin: 0 auto;
         gap: 50px;
         overflow: hidden;
+        margin-bottom: 100px !important;
 
         .project-number {
             display: none;
@@ -226,9 +217,9 @@ section {
         right: 0 !important;
         transition: none !important;
         opacity: 1 !important;
-        z-index: 1 !important;
         width: unset;
         align-items: center;
+        max-width: 500px;
 
         .number-container {
             display: none;
@@ -240,7 +231,18 @@ section {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1280px) {
+    .project-image {
+        height: 340px;
+        max-width: 450px;
+    }
+
+    .project-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 560px) {
     .project-image {
         height: 280px;
         max-width: 360px;
@@ -258,6 +260,10 @@ section {
         font-size: 18px;
     }
 
+    .number-container-small-screen{
+        font-size: 30px;
+    }
+
     .link {
         padding: 5px 25px;
 
@@ -271,13 +277,13 @@ section {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .project-image {
-        height: 200px;
-        max-width: 280px;
+        height: 180px;
+        max-width: 238px;
     }
 
     .project-description {
-        max-width: 280px;
+        max-width: 238px;
     }
 }

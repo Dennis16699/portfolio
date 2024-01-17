@@ -1,0 +1,10 @@
+.privacy-policy{
+    font-family: 'Overpass';
+    margin-top: 200px;
+    margin-bottom: 100px;  
+    padding: 0px 200px; 
+
+    @media (max-width: 900px) {
+        padding: 0px 30px;
+    }
+}
