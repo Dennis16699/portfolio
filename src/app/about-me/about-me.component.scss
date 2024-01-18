@@ -9,6 +9,10 @@ section {
     margin-top: -90px;
   }
 
+  @media (max-width: 900px) {
+    margin-top: -50px;
+  }
+
   h2 {
     font-size: 78px;
     font-weight: 800;
