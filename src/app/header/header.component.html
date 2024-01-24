@@ -1,11 +1,17 @@
 <header>
-    <div>
+    <div class="test1">
         <a href="#">
-            <img style="cursor: pointer;" src="/assets/img/Group.png">
+            <div class="logo-header">
+                <div class="logo-container">
+                    <div class="logo">D</div>
+                    <div class="logo">O</div>
+                </div>
+            </div>
         </a>
     </div>
     <div>
-        <img *ngIf="showBurgerMenu" (click)="navigateToNavbar()" style="height: 34px; cursor: pointer;" src="/assets/img/burger menu S3.png">
+        <img *ngIf="showBurgerMenu" (click)="navigateToNavbar()" style="height: 34px; cursor: pointer;"
+            src="/assets/img/burger menu S3.png">
         <a href="#main-page"><img *ngIf="!showBurgerMenu" style="cursor: pointer;" src="/assets/img/Variant5.png"></a>
     </div>
 </header>

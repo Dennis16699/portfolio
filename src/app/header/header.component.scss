@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fffcf3;
+  background-color: #FFFCF3;
   position: fixed;
   height: 130px;
   top: 0;
@@ -10,7 +10,10 @@ header {
   right: 0;
   padding: 0px 200px;
   z-index: 9;
-
+  
+  a{
+    text-decoration: none;
+  }
 
   @media (max-width: 900px) {
     padding: 0px 30px 0px 0px;
@@ -22,3 +25,47 @@ header {
     }
   }
 }
+
+/* Logo */
+.test1{
+  @media (max-width: 900px) {
+    padding: 0px 30px;
+    font-size: 38px;
+  }
+}
+
+.logo-header{
+  border: 3px solid black;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: #00BC8F;
+
+  
+}
+
+.logo-container {
+  background: linear-gradient(#FFFCF3, #FFFCF3) !important;
+  background-clip: text;
+  padding: 0px 8px;
+  -webkit-background-clip: text;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: flex;
+  z-index: 999;
+}
+
+.logo {
+  font-family: Arial, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  color: black; /* Textfarbe */
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px black;
+  color: #00BC8F;
+  background-color: #FFFCF3;
+
+  @media (max-width: 900px) {
+    font-size: 38px;
+  }
+}
+/* Logo */
